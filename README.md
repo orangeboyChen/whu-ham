@@ -1,11 +1,13 @@
 # Ham
 
 武汉大学生活助手——查询课表、跑步、预约武汉大学图书馆
+
 [![Join the chat at https://gitter.im/whu-ham/community](https://img.shields.io/badge/chat-on%20gitter-28BC99.svg)](https://gitter.im/whu-ham/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### 下载和安装
 
 Android版：[点击查看最新版本](https://github.com/orangeboyChen/whu-ham/releases/)
+
 iOS版：请在App Store中搜索Ham下载，或[点击加入TestFlight内测](https://testflight.apple.com/join/waKNnCG3)
 
 
@@ -43,4 +45,5 @@ iOS版：请在App Store中搜索Ham下载，或[点击加入TestFlight内测](h
 ### 为啥暂不开源
 
 项目里有很多我的账号信息，包括推送服务、苹果的开发者账号等，所以暂时不打算开源。虽然闭源，但它是完全免费的。
+如果你有好的建议，欢迎在gitter一起交流，也欢迎大家在gitter进行技术讨论！
 
