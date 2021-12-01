@@ -1,14 +1,13 @@
-# Ham
+# Ham &nbsp; [![Join the chat at https://gitter.im/whu-ham/community](https://img.shields.io/badge/chat-on%20gitter-28BC99.svg)](https://gitter.im/whu-ham/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-武汉大学生活助手——查询课表、跑步、预约武汉大学图书馆
+**武汉大学生活助手——查询课表、跑步、预约武汉大学图书馆**
 
-[![Join the chat at https://gitter.im/whu-ham/community](https://img.shields.io/badge/chat-on%20gitter-28BC99.svg)](https://gitter.im/whu-ham/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### 下载和安装
 
 Android版：[点击查看最新版本](https://github.com/orangeboyChen/whu-ham/releases/)
 
-iOS版：请在App Store中搜索Ham下载，或[点击加入TestFlight内测](https://testflight.apple.com/join/waKNnCG3)
+iOS版：[点击此处进入App Store下载](https://apps.apple.com/cn/app/ham/id1577896044)，或[点击加入TestFlight内测](https://testflight.apple.com/join/waKNnCG3)
 
 
 
