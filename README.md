@@ -9,6 +9,8 @@ Android版：[点击查看最新版本](https://github.com/orangeboyChen/whu-ham
 
 iOS版：[点击此处进入App Store下载](https://apps.apple.com/cn/app/ham/id1577896044)，或[点击加入TestFlight内测](https://testflight.apple.com/join/waKNnCG3)
 
+**目前iOS版只有测试版支持验证码识别**
+
 
 
 ### 它能做什么
