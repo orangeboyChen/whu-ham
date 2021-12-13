@@ -1,6 +1,6 @@
 # Ham &nbsp; [![Join the chat at https://gitter.im/whu-ham/community](https://img.shields.io/badge/chat-on%20gitter-28BC99.svg)](https://gitter.im/whu-ham/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-**武汉大学生活助手——查询课表、跑步、预约武汉大学图书馆**
+**武汉大学生活助手——查询课表、成绩、跑步、预约武汉大学图书馆**
 
 
 
@@ -21,6 +21,8 @@ iOS版：[点击此处进入App Store下载](https://apps.apple.com/cn/app/ham/i
 - 添加/修改课程、自定义课程表的样式
 
 - 课程提醒
+
+- 查询成绩、计算GPA
 
 - 制定跑步计划
 
