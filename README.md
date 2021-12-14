@@ -22,7 +22,7 @@ iOS版：[点击此处进入App Store下载](https://apps.apple.com/cn/app/ham/i
 
 - 课程提醒
 
-- 查询成绩、计算GPA
+- 查询成绩、计算GPA、综测成绩
 
 - 制定跑步计划
 
