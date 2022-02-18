@@ -23,7 +23,7 @@ iOS版：[点击此处进入App Store下载](https://apps.apple.com/cn/app/ham/i
 
 - 查询成绩、计算GPA、综测成绩
 
-- 制定跑步计划
+- ~~制定跑步计划~~（该功能暂时下线，正在适配绿色的APP）
 
 - 按照条件预约图书馆
 
