@@ -1,10 +1,11 @@
 module.exports = {
     title: 'Ham',
     sidebar: 'auto',
+    plugins: ['@vuepress/active-header-links'],
     themeConfig: {
+        lastUpdated: '最后更新时间',
         smoothScroll: true,
         repo: 'orangeboyChen/whu-ham',
-        lastUpdated: '最后更新时间',
         editLinks: true,
         docsRepo: 'orangeboyChen/whu-ham',
         docsDir: 'docs',
@@ -12,21 +13,21 @@ module.exports = {
         editLinkText: '编辑该页面',
         nav: [
             {
-                text: '使用手册',
-                link: '/handbook/'
-            },
-            {
                 text: '下载',
                 link: '/download/'
             },
             {
-              text: '关于',
-              link: '/about/'
+                text: '使用手册',
+                link: '/handbook/'
             },
             {
                 text: '隐私协议',
                 link: '/privacy/'
-            }
+            },
+            {
+                text: '关于',
+                link: '/about/'
+            },
         ],
         sidebar: {
             '/handbook/': [
