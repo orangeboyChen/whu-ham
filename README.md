@@ -1,12 +1,19 @@
-# Ham &nbsp; [![Join the chat at https://gitter.im/whu-ham/community](https://img.shields.io/badge/chat-on%20gitter-28BC99.svg)](https://gitter.im/whu-ham/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-**武汉大学生活助手——查询课表、成绩、跑步、预约武汉大学图书馆**
+<p align="center"><img src="./docs/.vuepress/public/icon-1024.png" width="18%" alt="Ham的Logo"/></p>
 
-### 文档地址
-[查看文档](https://orangeboychen.github.io/whu-ham/)
+<div align="center">
+<h1>Ham</h1>
+<span>查询课表、成绩、跑步、预约武汉大学图书馆</span><br><br>
+<a href="https://gitter.im/whu-ham/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://img.shields.io/badge/chat-on%20gitter-28BC99.svg" alt="Chat on gitter"></a>
+</div><br>
 
 
-### 下载
+
+### 文档
+需要获取使用帮助请[查看文档](https://orangeboychen.github.io/whu-ham/)
+
+
+### 下载安装
 [前往下载地址(Android / iOS)](https://orangeboychen.github.io/whu-ham/download/)
 
 
@@ -26,13 +33,12 @@
 - 每日自动预约图书馆
 - 更改图书馆预约时间
 
-~~#### 跑步~~
+~~跑步~~
 
 ~~- 制定跑步计划~~（该功能暂时下线，正在适配绿色的APP）
 
 #### 其它
 - 课程表、图书馆预约小组件支持（Android、iOS均可）
-
 
 
 ### 它安全吗
