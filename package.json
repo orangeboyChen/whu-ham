@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "^1.9.7",
+    "moment": "^2.29.1",
     "vuepress": "^1.9.7"
   },
   "scripts": {

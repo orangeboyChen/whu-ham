@@ -3,7 +3,16 @@ module.exports = {
     sidebar: 'auto',
     base: '/whu-ham/',
     plugins: [
+        '@vuepress/last-updated',
+        {
+            transformer: (timestamp, lang) => {
+                const moment = require('moment')
+                moment.locale(lang)
+                return moment(timestamp).fromNow()
+            }
+        },
         '@vuepress/active-header-links',
+
     ],
     locales: {
       '/': {
