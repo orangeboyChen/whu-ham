@@ -1,7 +1,15 @@
 module.exports = {
     title: 'Ham',
     sidebar: 'auto',
-    plugins: ['@vuepress/active-header-links'],
+    base: '/whu-ham/',
+    plugins: [
+        '@vuepress/active-header-links',
+    ],
+    locales: {
+      '/': {
+          lang: 'zh-CN',
+      }
+    },
     themeConfig: {
         lastUpdated: '最后更新时间',
         smoothScroll: true,

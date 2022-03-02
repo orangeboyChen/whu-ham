@@ -16,7 +16,7 @@ Ham不会收集您但个人信息，但为了提升应用的性能，或统计�
 
 涉及个人信息：WLAN状态信息、定位信息
 
-隐私权政策链接：[https://lbs.amap.com/pages/privacy/](https://lbs.amap.com/pages/privacy/)https://lbs.amap.com/pages/privacy/
+隐私权政策链接：[https://lbs.amap.com/pages/privacy/](https://lbs.amap.com/pages/privacy/)
 
 <br/>
 
