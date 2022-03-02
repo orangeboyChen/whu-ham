@@ -26,7 +26,7 @@ module.exports = {
         editLinks: true,
         docsRepo: 'orangeboyChen/whu-ham',
         docsDir: 'docs',
-        docsBranch: 'master',
+        docsBranch: 'main',
         editLinkText: '编辑该页面',
         nav: [
             {
