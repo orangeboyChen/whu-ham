@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Ham
-heroImage: ../icon-1024.png
+heroImage: ./icon-1024.png
 tagline: 
 actionText: 立刻下载 →
 actionLink: /download/
