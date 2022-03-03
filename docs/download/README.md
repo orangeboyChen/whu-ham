@@ -1,7 +1,7 @@
 # 下载
 
 ### Android
-[前往Github Release](https://github.com/orangeboyChen/whu-ham/releases/)
+[前往Github Release](https://github.com/orangeboyChen/whu-ham/releases/latest)
 
 ### iOS
 [前往App Store下载正式版](https://apps.apple.com/cn/app/ham/id1577896044)
