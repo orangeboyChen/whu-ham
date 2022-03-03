@@ -2,6 +2,12 @@ module.exports = {
     title: 'Ham',
     sidebar: 'auto',
     base: '/whu-ham/',
+    head: [
+        [
+            'link',
+            { rel: 'icon', href: 'icon-1024.png' }
+        ]
+    ],
     plugins: [
         '@vuepress/last-updated',
         {

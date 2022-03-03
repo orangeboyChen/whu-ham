@@ -3,7 +3,7 @@ home: true
 heroText: Ham
 heroImage: ./icon-1024.png
 tagline: 
-actionText: 立刻下载 →
+actionText: 下载 →
 actionLink: /download/
 features:
 - title: 课程
