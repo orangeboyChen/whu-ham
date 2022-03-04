@@ -89,7 +89,9 @@ export default {
 
       //1. 对所有的release按照日期排序
       let releaseList = res.data;
-      releaseList.sort((a, b) => new Date(a['published_at']) > new Date(b['published_at']));
+      // releaseList.sort((a, b) => new Date(a['published_at']) > new Date(b['published_at']));
+
+      console.log(releaseList);
 
       //2. 找到正式版和beta版的asset
       let finalRelease = null;

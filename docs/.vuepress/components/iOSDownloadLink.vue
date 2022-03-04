@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div v-if="finalRelease.name !== ''">
       <h3 style="margin-bottom: 2px;">正式版 {{finalRelease.name}}</h3>
       <span class="caption">发布于 {{formatDate(finalRelease.publishDate)}}</span>
 
@@ -56,7 +56,7 @@ export default {
   },
   created() {
     this.getIOSReleaseVersionInfo();
-    this.getIOSBetaVersionInfo();
+    // this.getIOSBetaVersionInfo();
   },
   methods: {
     formatDate: function(date) {
