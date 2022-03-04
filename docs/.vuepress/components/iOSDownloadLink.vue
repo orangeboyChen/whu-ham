@@ -77,7 +77,7 @@ export default {
       this.finalRelease.publishDate = new Date(releaseReleaseInfo.releaseDate);
     },
     getIOSBetaVersionInfo: async function () {
-      let res = await axios.get('http://api.ham.nowcent.cn/version');
+      let res = await axios.get('https://api.ham.nowcent.cn/version');
       if(res.status !== 200) {
         return;
       }
