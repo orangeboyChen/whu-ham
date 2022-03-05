@@ -18,7 +18,7 @@
 
         </div>
       </div>
-      <div v-if="betaRelease.name !== '' && betaRelease.publishDate > finalRelease.publishDate">
+      <div v-if="betaRelease.name !== ''">
         <h3 style="margin-bottom: 2px;">测试版 {{betaRelease.name}}</h3>
         <span class="caption">发布于 {{formatDate(betaRelease.publishDate)}}</span>
         <blockquote>
@@ -30,9 +30,6 @@
           <p class="custom-block-title">注意</p>
           <p>使用测试版含有不稳定因素。如果在使用时遇到了问题，欢迎在Github中进行反馈。</p>
         </div>
-        <blockquote>
-          <p>下载内测版前，请确保你的设备已安装TestFlight。</p>
-        </blockquote>
         <div class="link">
           <a :href="betaRelease.apkUrl" target="_blank" rel="noopener noreferrer">
             下载测试版安装包
@@ -91,15 +88,13 @@ export default {
       let releaseList = res.data;
       // releaseList.sort((a, b) => new Date(a['published_at']) > new Date(b['published_at']));
 
-      console.log(releaseList);
-
       //2. 找到正式版和beta版的asset
       let finalRelease = null;
       let betaRelease = null;
 
       for(let i = 0; i < releaseList.length; i++) {
         let release = releaseList[i];
-        if(finalRelease == null) {
+        if(finalRelease == null && release.name.indexOf('beta') === -1) {
           finalRelease = release;
         }
 
