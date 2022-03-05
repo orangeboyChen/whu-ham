@@ -87,6 +87,10 @@ export default {
 
       // 得到查询结果后的回调函数;
 
+      if(typeof window === 'undefined') {
+        return;
+      }
+
       let that = this;
       window.jsonpCallback = function (data) {
         let releaseReleaseInfo = data.results[0];
