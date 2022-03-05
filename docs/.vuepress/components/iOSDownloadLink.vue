@@ -47,7 +47,6 @@
 <script>
 import axios from 'axios'
 import moment from 'moment'
-import {jsonp} from "vue-jsonp";
 
 export default {
   name: "iOSDownloadLink",
