@@ -10,7 +10,7 @@
 
 
 ### 文档
-需要获取使用帮助请[前往文档主页](https://orangeboychen.github.io/whu-ham/)
+需要获取使用帮助请[前往文档主页](https://ham.nowcent.cn)
 
 
 ### 下载安装
