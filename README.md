@@ -12,6 +12,8 @@
 ### 文档
 需要获取使用帮助请[前往文档主页](https://ham.nowcent.cn)
 
+**注意：如果Android 1.2.4无法安装，可尝试下载[这个](https://ham-android-archive.oss-cn-shenzhen.aliyuncs.com/ham-1.2.4.apk)**
+
 
 ### 下载安装
 [前往下载地址(Android / iOS)](https://orangeboychen.github.io/whu-ham/download/)
