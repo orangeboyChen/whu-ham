@@ -37,8 +37,12 @@
 import axios from 'axios'
 import moment from 'moment'
 import ArrowLink from "./ArrowLink.vue";
+
 export default {
   name: "AndroidDownloadLink",
+  components: {
+    ArrowLink
+  },
   data() {
     return {
       finalRelease: {
@@ -61,7 +65,6 @@ export default {
   },
   methods: {
     formatDate: function(date) {
-      moment.locale('zh-cn');
       return moment(date).fromNow();
     },
     getAndroidVersionInfo: async function() {
