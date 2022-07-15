@@ -6,44 +6,29 @@
         <span class="caption">发布于 {{formatDate(finalRelease.publishDate)}}</span>
 
         <blockquote>
-          <h4 style="margin-bottom: 4px;margin-top: 8px;">更新日志</h4>
+          <span class="ham_text_t1">更新日志</span>
           <div v-html="finalRelease.updateLog.replace(/- /g, '').replace(/\n/g, '<br>')"></div>
         </blockquote>
 
-        <div class="link">
-          <a :href="finalRelease.apkUrl" target="_blank" rel="noopener noreferrer">
-            下载安装包
-            <OutboundLink/>
-          </a>
-
-        </div>
+        <ArrowLink :href="finalRelease.apkUrl" text="下载安装包"/>
       </div>
       <div v-if="betaRelease.name !== ''">
         <h3 style="margin-bottom: 2px;">测试版 {{betaRelease.name}}</h3>
         <span class="caption">发布于 {{formatDate(betaRelease.publishDate)}}</span>
         <blockquote>
-          <h4 style="margin-bottom: 4px;margin-top: 8px;">更新日志</h4>
+          <span class="ham_text_t1">更新日志</span>
           <div v-html="betaRelease.updateLog.replace(/- /g, '').replace(/\n/g, '<br>')"></div>
         </blockquote>
 
-        <div class="custom-block warning">
-          <p class="custom-block-title">注意</p>
+        <div class="custom-container warning">
+          <p class="custom-container-title">注意</p>
           <p>使用测试版含有不稳定因素。如果在使用时遇到了问题，欢迎在Github中进行反馈。</p>
         </div>
-        <div class="link">
-          <a :href="betaRelease.apkUrl" target="_blank" rel="noopener noreferrer">
-            下载测试版安装包
-            <OutboundLink/>
-          </a>
-
-        </div>
+        <ArrowLink :href="betaRelease.apkUrl" text="下载测试版安装包"/>
       </div>
     </div>
-    <div class="link" v-else>
-      <a href="https://github.com/orangeboyChen/whu-ham/releases/latest" target="_blank" rel="noopener noreferrer">
-        前往Github Release
-        <OutboundLink/>
-      </a>
+    <div v-else>
+      <ArrowLink href="https://github.com/orangeboyChen/whu-ham/releases/latest" text="前往Github Release"/>
     </div>
   </div>
 </template>
@@ -51,6 +36,7 @@
 <script>
 import axios from 'axios'
 import moment from 'moment'
+import ArrowLink from "./ArrowLink.vue";
 export default {
   name: "AndroidDownloadLink",
   data() {
@@ -132,8 +118,9 @@ export default {
   font-size: small;
 }
 
-.link {
-  margin-top: 16px;
+.ham_text_t1 {
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 </style>

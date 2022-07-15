@@ -5,51 +5,38 @@
       <span class="caption">发布于 {{formatDate(finalRelease.publishDate)}}</span>
 
       <blockquote>
-        <h4 style="margin-bottom: 4px;margin-top: 8px;">更新日志</h4>
+        <span class="ham_text_t1">更新日志</span>
         <div v-html="finalRelease.updateLog.replace(/新增内容：\n/g, '').replace(/· /g, '').replace(/\n/g, '<br>')"></div>
       </blockquote>
     </div>
-    <div class="link">
-      <a href="https://apps.apple.com/cn/app/ham/id1577896044" target="_blank" rel="noopener noreferrer">
-        前往App Store下载正式版
-        <OutboundLink/>
-      </a>
-
-    </div>
+    <ArrowLink href="https://apps.apple.com/cn/app/ham/id1577896044" text="前往App Store下载正式版"/>
     <div v-if="betaRelease.name !== ''">
       <h3 style="margin-bottom: 2px;">测试版 {{betaRelease.name}}</h3>
       <span v-if="betaRelease.publishDate != null" class="caption">发布于 {{formatDate(betaRelease.publishDate)}}</span>
       <blockquote v-if="betaRelease.updateLog !== ''">
-        <h4 style="margin-bottom: 4px;margin-top: 8px;">更新日志</h4>
+        <span class="ham_text_t1">更新日志</span>
         <div v-html="betaRelease.updateLog.replace(/- /g, '').replace(/\n/g, '<br>')"></div>
       </blockquote>
     </div>
-    <div class="custom-block tip"  style="border-color: lightgray;">
-      <p class="custom-block-title">提示</p>
+    <div class="custom-container tip"  style="border-color: lightgray;">
+      <p class="custom-container-title">提示</p>
       <p>下载测试版前，请确保你的设备已安装
-        <a href="https://apps.apple.com/us/app/testflight/id899247664" target="_blank" rel="noopener noreferrer">
-        TestFlight
-        <OutboundLink/>
-      </a>
+        <ArrowLink href="https://apps.apple.com/us/app/testflight/id899247664" text="TestFlight"/>
         。
       </p>
     </div>
-    <div class="link">
-<!--      https://testflight.apple.com/join/waKNnCG3-->
-      <a href="itms-beta://testflight.apple.com/join/waKNnCG3" target="_blank" rel="noopener noreferrer">
-        加入TestFlight内测
-        <OutboundLink/>
-      </a>
-    </div>
+    <ArrowLink href="itms-beta://testflight.apple.com/join/waKNnCG3" text="加入TestFlight内测"/>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import moment from 'moment'
+import HamLink from './ArrowLink.vue';
 
 export default {
   name: "iOSDownloadLink",
+  components: {ArrowLink: HamLink},
   data() {
     return {
       finalRelease: {
@@ -128,6 +115,11 @@ export default {
 
 .link {
   margin-top: 16px;
+}
+
+.ham_text_t1 {
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 </style>

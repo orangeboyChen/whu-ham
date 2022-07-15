@@ -2,9 +2,11 @@
 home: true
 heroText: Ham
 heroImage: ./icon-1024.png
-tagline: 
-actionText: 下载 →
-actionLink: /download/
+tagline:
+actions:
+- text: 下载 →
+  link: /download/
+  type: primary
 features:
 - title: 课程
   details: 快速导入课程、查看你的课程信息
@@ -12,5 +14,5 @@ features:
   details: 计算GPA、学分，查询给分
 - title: 图书馆
   details: 自动预约图书馆，免去每日手动预约的烦恼
-  footer: Powered by orangeboy
+footer: Powered by orangeboy
 ---
