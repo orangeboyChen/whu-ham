@@ -1,0 +1,1 @@
+import{_ as n,o,c as t,b as c,r}from"./app.82cebcf3.js";const a={};function _(s,i){const e=r("WechatLoginView");return o(),t("div",null,[c(e)])}var m=n(a,[["render",_],["__file","index.html.vue"]]);export{m as default};
