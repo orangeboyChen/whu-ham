@@ -24,12 +24,14 @@ module.exports = {
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),
-        // docsearchPlugin({
-        //
-        // }),
-        searchPlugin({
-            // 配置项
+        docsearchPlugin({
+            appId: '92H3AM2QST',
+            apiKey: 'c509e924662c649625019c373a234990',
+            indexName: 'whu-ham'
         }),
+        // searchPlugin({
+        //     // 配置项
+        // }),
     ],
 
     theme: defaultTheme({
