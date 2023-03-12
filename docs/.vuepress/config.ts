@@ -15,7 +15,7 @@ export default defineUserConfig({
     base: '/whu-ham/',
     head: [
         ['link', { rel: 'icon', href: 'icon-1024.png' }],
-        ['link', { rel: 'manifest', href: '/whu-ham/manifest.webmanifest' }]
+        ['link', { rel: 'manifest', href: 'https://orangeboychen.github.io/whu-ham/manifest.webmanifest' }]
     ],
     plugins: [
         { name: '@vuepress/last-updated' },
