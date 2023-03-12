@@ -1,20 +1,6 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
-import {SidebarConfig} from "vuepress";
+import { DefaultThemeLocaleData } from "@vuepress/theme-default/lib/shared/options";
 
-class ThemeConfig {
-    navbar: NavbarConfig
-    sidebar: SidebarConfig
-    lastUpdatedText: String
-    contributorsText: String
-    editLinkText: String
-    notFound: Array<String>
-    backToHome: String
-}
-
-// @ts-ignore
-// @ts-ignore
-// @ts-ignore
-export const zhThemeConfig: ThemeConfig = {
+export const zhThemeConfig: DefaultThemeLocaleData = {
     lastUpdatedText: '最后更新时间',
     contributorsText: '贡献者',
     editLinkText: '编辑该页面',
@@ -41,7 +27,6 @@ export const zhThemeConfig: ThemeConfig = {
     sidebar: {
         '/handbook/': [
             {
-                // @ts-ignore
                 text: '使用手册',
                 collapsible: false,
                 children: [
@@ -50,6 +35,7 @@ export const zhThemeConfig: ThemeConfig = {
                     '/handbook/course.md',
                     '/handbook/library.md',
                     '/handbook/score.md',
+                    '/handbook/sport.md',
                     '/handbook/automatic.md',
                     '/handbook/sync.md',
                     '/handbook/bugfix.md'
