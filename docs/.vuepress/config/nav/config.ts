@@ -36,6 +36,9 @@ export const zhThemeConfig: DefaultThemeLocaleData = {
                     '/handbook/library.md',
                     '/handbook/score.md',
                     '/handbook/sport.md',
+                    '/handbook/pay.md',
+                    '/handbook/schedule.md',
+                    '/handbook/bus.md',
                     '/handbook/automatic.md',
                     '/handbook/sync.md',
                     '/handbook/bugfix.md'
