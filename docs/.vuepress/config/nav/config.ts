@@ -4,7 +4,7 @@ export const zhThemeConfig: DefaultThemeLocaleData = {
     lastUpdatedText: '最后更新时间',
     contributorsText: '贡献者',
     editLinkText: '编辑该页面',
-    notFound: ['你喵的要去哪里啊', '你做肛拭子没啊', '明天核酸'],
+    notFound: ['你喵的要去哪里啊'],
     backToHome: '回到主页',
     navbar: [
         {
