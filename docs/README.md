@@ -23,5 +23,5 @@ features:
 - title: 日程
   details: 添加你的作业并支持到期提醒，支持关联课程，并同步到iOS日历
 
-footer: Powered by orangeboy
+footer: Powered by orangeboy(admin@nowcent.cn)
 ---
