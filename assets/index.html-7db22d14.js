@@ -1,0 +1,1 @@
+import{_ as o,M as r,p as t,q as n,N as c}from"./framework-caba6eb2.js";const s={};function _(a,l){const e=r("CourseScoreShareResultView");return t(),n("div",null,[c(e)])}const u=o(s,[["render",_],["__file","index.html.vue"]]);export{u as default};

@@ -1,0 +1,1 @@
+import{_ as n,M as o,p as t,q as c,N as _}from"./framework-caba6eb2.js";const a={};function r(s,i){const e=o("WechatLoginView");return t(),c("div",null,[_(e)])}const m=n(a,[["render",r],["__file","index.html.vue"]]);export{m as default};
