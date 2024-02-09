@@ -14,7 +14,7 @@ export default defineUserConfig({
     title: 'Ham',
     base: '/whu-ham/',
     head: [
-        ['link', { rel: 'icon', href: 'icon-1024.png' }],
+        ['link', { rel: 'icon', href: 'icon-1024 2.png' }],
         ['link', { rel: 'manifest', href: 'https://orangeboychen.github.io/whu-ham/manifest.webmanifest' }]
     ],
     plugins: [

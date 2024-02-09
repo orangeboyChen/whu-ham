@@ -3,7 +3,7 @@
 ::: tip 版本要求
 iOS: 1.3.2 (build >= 96)
 
-Android: 暂未支持
+Android: 1.4.3
 :::
 
 你可以通过Ham查看校巴信息。

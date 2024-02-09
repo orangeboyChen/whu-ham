@@ -7,58 +7,17 @@
     <div style="height: 16px;"/>
 
     <div class="container">
-      <div class="course-score-item">
-        <div class="course-score-item-tip">90-100</div>
-        <div style="background: #4CAF50;"
-             :style="{width: scoreInfo.a / scoreInfo.total * 80 + '%'}"
+      <div class="course-score-item" v-for="(info, i) in scoreInfo.data">
+        <div class="course-score-item-tip">{{ info.from }}-{{ info.to }}</div>
+        <div
+            :style="{ width: info.total / scoreInfo.total * 80 + '%',
+            background: i < colorArr.length ? colorArr[i] : colorArr[colorArr.length - 1]
+        }"
              class="course-score-item-division"
-             v-if="scoreInfo.a > 0"></div>
-        <span style="color: #4CAF50;">{{ scoreInfo.a }}</span>
-      </div>
-
-      <div class="course-score-item">
-        <div class="course-score-item-tip">85-90</div>
-        <div style="background: #8BC34A"
-             :style="{width: scoreInfo.b / scoreInfo.total * 80 + '%'}"
-             class="course-score-item-division"
-             v-if="scoreInfo.b > 0"></div>
-        <span style="color: #8BC34A;">{{ scoreInfo.b }}</span>
-      </div>
-
-      <div class="course-score-item">
-        <div class="course-score-item-tip">80-85</div>
-        <div style="background: #FFEB3B"
-             :style="{width: scoreInfo.c / scoreInfo.total * 80 + '%'}"
-             class="course-score-item-division"
-             v-if="scoreInfo.c > 0"></div>
-        <span style="color: #FFEB3B;">{{ scoreInfo.c }}</span>
-      </div>
-
-      <div class="course-score-item">
-        <div class="course-score-item-tip">70-80</div>
-        <div style="background: #FFC107"
-             :style="{width: scoreInfo.d / scoreInfo.total * 80 + '%'}"
-             class="course-score-item-division"
-             v-if="scoreInfo.d > 0"></div>
-        <span style="color: #FFC107;">{{ scoreInfo.d }}</span>
-      </div>
-
-      <div class="course-score-item">
-        <div class="course-score-item-tip">60-70</div>
-        <div style="background: #FF9800"
-             :style="{width: scoreInfo.e / scoreInfo.total * 80 + '%'}"
-             class="course-score-item-division"
-             v-if="scoreInfo.e > 0"></div>
-        <span style="color: #FF9800;">{{ scoreInfo.e }}</span>
-      </div>
-
-      <div class="course-score-item">
-        <div class="course-score-item-tip">0-60</div>
-        <div style="background: #FF5722"
-             :style="{width: scoreInfo.f / scoreInfo.total * 80 + '%'}"
-             class="course-score-item-division"
-             v-if="scoreInfo.f > 0"></div>
-        <span style="color: #FF5722;">{{ scoreInfo.f }}</span>
+             v-if="info.total > 0"></div>
+        <span :style="{
+          color: i < colorArr.length ? colorArr[i] : colorArr[colorArr.length - 1]
+        }">{{ info.total }}</span>
       </div>
     </div>
 
@@ -87,30 +46,41 @@ export default {
         instructor: ''
       },
       scoreInfo: {
-        a: 0,
-        b: 0,
-        c: 0,
-        d: 0,
-        e: 0,
-        f: 0,
         total: 0,
-        average: 0.0
+        average: 0.0,
+        data: []
       },
-      dataTime: ''
+      dataTime: '',
+      colorArr: [
+          '#4CAF50',
+          '#8BC34A',
+          '#FFEB3B',
+          '#FFC107',
+          '#FF9800',
+          '#FF5722',
+      ]
     }
   },
   created() {
-    const { name, instructor, sign, data, dataTime } = this.$route.query
+    const { name, instructor, sign, data, dataTime, v } = this.$route.query
+    if (v !== '2') {
+      this.pushToHome()
+      return
+    }
     this.courseInfo.name = decodeURI(name)
     this.courseInfo.instructor = decodeURI(instructor)
     this.dataTime = dataTime
 
-    const correctSign = md5(`${name}${instructor}${data}${dataTime}uTYbpYG7YSVzncQZ`)
+    const correctSign = md5(`v2${name}${instructor}${data}${dataTime}uTYbpYG7YSVzncQZ`)
     if (correctSign !== sign) {
-      this.$router.push('/')
+      this.pushToHome()
       return
     }
     this.scoreInfo = JSON.parse(data)
+    console.log(this.scoreInfo)
+  },
+  pushToHome() {
+    this.$router.push('/')
   }
 }
 </script>

@@ -190,11 +190,12 @@ export default {
       let that = this;
       window.jsonpCallback = function (data) {
         let releaseReleaseInfo = data.results[0];
+        console.log(releaseReleaseInfo)
 
         //组装数据
         that.finalRelease.name = releaseReleaseInfo.version;
         that.finalRelease.updateLog = releaseReleaseInfo.releaseNotes;
-        that.finalRelease.publishDate = new Date(releaseReleaseInfo.releaseDate);
+        that.finalRelease.publishDate = new Date(releaseReleaseInfo.currentVersionReleaseDate);
       };
 
       let url = "https://itunes.apple.com/lookup?id=1577896044&callback=jsonpCallback";
@@ -203,15 +204,15 @@ export default {
       document.getElementsByTagName("head")[0].appendChild(script);
     },
     getIOSBetaVersionInfo: async function () {
-      let res = await axios.get('https://api.ham.nowcent.cn/version');
-      if(res.status !== 200) {
-        return;
-      }
-
-      let betaReleaseInfo = res.data.data.iosVersion;
-      this.betaRelease.name = `${betaReleaseInfo.versionName}(${betaReleaseInfo.versionCode})`
-      this.betaRelease.updateLog = betaReleaseInfo.versionDescription ?? '';
-      this.betaRelease.publishDate = betaReleaseInfo.betaUpdateTime ?? null;
+      // let res = await axios.get('https://api.ham.nowcent.cn/version');
+      // if(res.status !== 200) {
+      //   return;
+      // }
+      //
+      // let betaReleaseInfo = res.data.data.iosVersion;
+      // this.betaRelease.name = `${betaReleaseInfo.versionName}(${betaReleaseInfo.versionCode})`
+      // this.betaRelease.updateLog = betaReleaseInfo.versionDescription ?? '';
+      // this.betaRelease.publishDate = betaReleaseInfo.betaUpdateTime ?? null;
     }
   }
 }

@@ -104,12 +104,12 @@ export default {
         this.finalRelease.apkUrl = finalRelease.assets[0]['browser_download_url']
       }
 
-      this.betaRelease.name = betaRelease.name;
-      this.betaRelease.updateLog = betaRelease.body;
-      this.betaRelease.publishDate = new Date(betaRelease['published_at']);
-      if(betaRelease.assets.length > 0 && betaRelease.assets[0]['browser_download_url'].indexOf('apk') !== -1) {
-        this.betaRelease.apkUrl = betaRelease.assets[0]['browser_download_url']
-      }
+      // this.betaRelease.name = betaRelease.name;
+      // this.betaRelease.updateLog = betaRelease.body;
+      // this.betaRelease.publishDate = new Date(betaRelease['published_at']);
+      // if(betaRelease.assets.length > 0 && betaRelease.assets[0]['browser_download_url'].indexOf('apk') !== -1) {
+      //   this.betaRelease.apkUrl = betaRelease.assets[0]['browser_download_url']
+      // }
     }
   }
 }
