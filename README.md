@@ -4,7 +4,7 @@
 <div align="center">
 <h1>Ham</h1>
 <span>查询课表、成绩、预定运动场馆、预约武汉大学图书馆</span><br><br>
-<a href="https://gitter.im/whu-ham/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://img.shields.io/badge/chat-on%20gitter-28BC99.svg" alt="Chat on gitter"></a>
+<a href="https://txc.qq.com/products/606034"><img alt="Static Badge" src="https://img.shields.io/badge/Feedback_On-%E5%85%94%E5%B0%8F%E5%B7%A2-2378ff"></a>
 </div><br>
 
 
