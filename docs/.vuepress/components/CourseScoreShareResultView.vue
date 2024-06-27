@@ -58,7 +58,7 @@ export default {
           '#FFC107',
           '#FF9800',
           '#FF5722',
-      ]
+      ].reverse()
     }
   },
   created() {
