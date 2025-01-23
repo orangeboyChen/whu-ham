@@ -5,6 +5,7 @@ import DefaultTheme from 'vitepress/theme'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import './style.css'
+import agconnect from '../../config/agcconnect';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 export default {
@@ -14,8 +15,13 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app }) {
-    app.use(ElementPlus)
+  async enhanceApp({ app, router}) {
+    app.use(ElementPlus);
+    injectVueComponent({app});
+
+    await agconnect.remoteConfig().initialized();
+    await agconnect.remoteConfig().fetch();
+    await agconnect.remoteConfig().apply();
   }
 } satisfies Theme
 

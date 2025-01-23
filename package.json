@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "@hw-agconnect/api": "1.5.1",
+    "@hw-agconnect/api-types": "1.5.1",
+    "@hw-agconnect/instance-types": "1.5.1",
+    "@hw-agconnect/remoteconfig": "1.5.1",
     "axios": "^1.7.9",
     "element-plus": "^2.9.3",
     "js-md5": "^0.7.3",

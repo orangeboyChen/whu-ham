@@ -11,6 +11,18 @@ importers:
       '@element-plus/icons-vue':
         specifier: ^2.3.1
         version: 2.3.1(vue@3.5.13(typescript@5.7.3))
+      '@hw-agconnect/api':
+        specifier: 1.5.1
+        version: 1.5.1
+      '@hw-agconnect/api-types':
+        specifier: 1.5.1
+        version: 1.5.1
+      '@hw-agconnect/instance-types':
+        specifier: 1.5.1
+        version: 1.5.1
+      '@hw-agconnect/remoteconfig':
+        specifier: 1.5.1
+        version: 1.5.1
       axios:
         specifier: ^1.7.9
         version: 1.7.9
@@ -303,6 +315,57 @@ packages:
 
   '@floating-ui/utils@0.2.9':
     resolution: {integrity: sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==}
+
+  '@hw-agconnect/abtest-types@1.5.1':
+    resolution: {integrity: sha512-wr41iI/eutv8S9HjaOM1KDxhSzhc0rBZbL/rv8NILJKEXrYOExcJ6Mm7DF3bLRlxbLNoAyleRrSpgHSZNEfhVQ==}
+
+  '@hw-agconnect/abtest@1.5.1':
+    resolution: {integrity: sha512-pxm8mja8kcMPEpY2Uso54WwY6oYtvpnF2C7oDNUU1TXsh/ttDHehDUVdwVInFlJbql2y9OpAmR36HoOja5gqjA==}
+
+  '@hw-agconnect/api-types@1.5.1':
+    resolution: {integrity: sha512-DG1kt8zNmkKl4XC5iiw0filX0vJSk09lktCfPweKobz1t8ykWfDXpfWD5AUodAAoMdWl/D9LoEpDclJIPZ/hfQ==}
+
+  '@hw-agconnect/api@1.5.1':
+    resolution: {integrity: sha512-Ujb1l/39Qn07/++8nkyQx9ZuPmRk51YpR7odth/r5+PJBa7LX/Ebczkj+cPEgnzR8b5rDmlLCjjRqa0CarD9Uw==}
+
+  '@hw-agconnect/baseservice-types@1.5.1':
+    resolution: {integrity: sha512-gAKmGhOZMzBQuSYu3TQr6AqI2mWtD8CKcUMG3GnysRGvOWOE/+S8zJUy5Eb1CpzrqR1ScyRF1jCUCN/5PdM3+g==}
+
+  '@hw-agconnect/baseservice@1.5.1':
+    resolution: {integrity: sha512-KllAnFyLcfiyMW3KcmI8yIS1tbenOX1AG13PtqnGb/dsCyU/BAS626UdwHP3Ag71Gmh8KEh7pVw48kh18E4DZA==}
+
+  '@hw-agconnect/core@1.5.1':
+    resolution: {integrity: sha512-St7gFLtvqjkVJtnG53tPe5qGeLdlF+mdt0BTznQgF3tJC3CeQ4j1P+KBaTOCbMWCd9lPBwH6kUiesgCOhPvp/A==}
+
+  '@hw-agconnect/instance-types@1.5.1':
+    resolution: {integrity: sha512-zYdPXl9BIPajl/P8C4grvuRiY+6tIh7OSuv1QyWANBmbg1aLob9LNGFzrpvDw4CxrV4VPrYL3iKpWnfgruIZMQ==}
+
+  '@hw-agconnect/instance@1.5.1':
+    resolution: {integrity: sha512-V9KRZfS0y70wYBDU8WPlLvONJaVNhO1ev8yy9JSGq8zNZJeZrILm9RJO8DhulOR8F4Y+6g8ccSArWH/dX0RgkA==}
+
+  '@hw-agconnect/log@1.5.1':
+    resolution: {integrity: sha512-8FRyiP68KQeJ+3pI+/xNSHiGw7UTMsgBdmteHeJrYJas1U+5RG74CuHUxhwFjEa3iwNan46VaCNLaSrgMehyww==}
+
+  '@hw-agconnect/network-types@1.5.1':
+    resolution: {integrity: sha512-b3EWvBHB81J0KBhtbEZxJndp82TSLtnx8ePBjBJqKnodbM/hmkUn7pKTZLswSrQshGIZe6ixFpJj0kE5piP0iA==}
+
+  '@hw-agconnect/network@1.5.1':
+    resolution: {integrity: sha512-Kz94N2qhHB0HPLf3sCzbCENQ239bxb7QSfC9AwicAXJzZFbUabUVITfxKvGPzfiDs/YgpeIjKH1MvsOWoKSLpg==}
+
+  '@hw-agconnect/remoteconfig-types@1.5.1':
+    resolution: {integrity: sha512-kQHT3YuvCplvZL5Fk3rB7BzSwP3ZRE0q+nlTA+jos4splceF+YGsr5OaKFMvhf03dQ5vpA/0JOqsJnYLsJL+4g==}
+
+  '@hw-agconnect/remoteconfig@1.5.1':
+    resolution: {integrity: sha512-S6C1xPwFCHWBS2eIE7QMFw3cmocU5EbkpPzLATRZjaE2SHIaaP6NFipbT9t0BT2jrLOLaRkPrNIxfpsy1QrWTg==}
+
+  '@hw-agconnect/storage-types@1.5.1':
+    resolution: {integrity: sha512-Lwn2kXQGKm27kr8Gmz2M9pPnI/zNe9h05kgMMIwZwq0/9x29Eswa8wgy8cynTk1MdAbuhwkCLn+cxPTZ3CwIvA==}
+
+  '@hw-agconnect/storage@1.5.1':
+    resolution: {integrity: sha512-1SABDBlBaKonFqkI7k44jK5JD0rfT4Z5sJR/qvJUiOjIygFGdFmZdrJDr5QQam1VrcQPMoLkMzSDrWT8bfuCwg==}
+
+  '@hw-agconnect/util@1.5.1':
+    resolution: {integrity: sha512-PksnWW/I+4u+0fGf9cRP3RmCc5ziiXI4KOB/5KgPzX/RvhpVLbqaUhoiyotbsCqm3LpiV/G6SJJTp1isS1EmcA==}
 
   '@iconify-json/simple-icons@1.2.21':
     resolution: {integrity: sha512-aqbIuVshMZ2fNEhm25//9DoKudboXF3CpoEQJJlHl9gVSVNOTr4cgaCIZvgSEYmys2HHEfmhcpoZIhoEFZS8SQ==}
@@ -670,8 +733,14 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
+  axios@0.27.2:
+    resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==}
+
   axios@1.7.9:
     resolution: {integrity: sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==}
+
+  bignumber.js@9.1.2:
+    resolution: {integrity: sha512-2/mKyZH9K85bzOEfhXDBFZTGd1CTs+5IHpeFQo9luiBG7hghdC851Pj2WAhb6E3R6b9tZj/XKhbg4fum+Kepug==}
 
   birpc@0.2.19:
     resolution: {integrity: sha512-5WeXXAvTmitV1RqJFppT5QtUiz2p1mRSYU000Jkft5ZUCLJIk4uQriYNO50HknxKwM6jd8utNc66K1qGIwwWBQ==}
@@ -807,6 +876,9 @@ packages:
 
   js-md5@0.7.3:
     resolution: {integrity: sha512-ZC41vPSTLKGwIRjqDh8DfXoCrdQIyBgspJVPXHBGu4nZlAEvG3nf+jO9avM9RmLiGakg7vz974ms99nEV0tmTQ==}
+
+  json-bigint@1.0.0:
+    resolution: {integrity: sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==}
 
   lodash-es@4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
@@ -973,6 +1045,9 @@ packages:
     resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  ua-parser-js@1.0.34:
+    resolution: {integrity: sha512-K9mwJm/DaB6mRLZfw6q8IMXipcrmuT6yfhYmwhAkuh+81sChuYstYA+znlgaflUPaYUa3odxKPKGw6Vw/lANew==}
 
   undici-types@6.20.0:
     resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
@@ -1292,6 +1367,123 @@ snapshots:
       '@floating-ui/utils': 0.2.9
 
   '@floating-ui/utils@0.2.9': {}
+
+  '@hw-agconnect/abtest-types@1.5.1': {}
+
+  '@hw-agconnect/abtest@1.5.1':
+    dependencies:
+      '@hw-agconnect/abtest-types': 1.5.1
+      '@hw-agconnect/api': 1.5.1
+      '@hw-agconnect/api-types': 1.5.1
+      '@hw-agconnect/instance': 1.5.1
+      '@hw-agconnect/instance-types': 1.5.1
+      '@hw-agconnect/log': 1.5.1
+      '@hw-agconnect/storage': 1.5.1
+      '@hw-agconnect/storage-types': 1.5.1
+
+  '@hw-agconnect/api-types@1.5.1': {}
+
+  '@hw-agconnect/api@1.5.1':
+    dependencies:
+      '@hw-agconnect/api-types': 1.5.1
+
+  '@hw-agconnect/baseservice-types@1.5.1': {}
+
+  '@hw-agconnect/baseservice@1.5.1':
+    dependencies:
+      '@hw-agconnect/api': 1.5.1
+      '@hw-agconnect/api-types': 1.5.1
+      '@hw-agconnect/baseservice-types': 1.5.1
+      '@hw-agconnect/core': 1.5.1
+      '@hw-agconnect/instance': 1.5.1
+      '@hw-agconnect/instance-types': 1.5.1
+      '@hw-agconnect/log': 1.5.1
+      '@hw-agconnect/network': 1.5.1
+      '@hw-agconnect/network-types': 1.5.1
+      '@hw-agconnect/storage': 1.5.1
+      '@hw-agconnect/storage-types': 1.5.1
+    transitivePeerDependencies:
+      - debug
+
+  '@hw-agconnect/core@1.5.1': {}
+
+  '@hw-agconnect/instance-types@1.5.1': {}
+
+  '@hw-agconnect/instance@1.5.1':
+    dependencies:
+      '@hw-agconnect/api': 1.5.1
+      '@hw-agconnect/api-types': 1.5.1
+      '@hw-agconnect/core': 1.5.1
+      '@hw-agconnect/instance-types': 1.5.1
+      '@hw-agconnect/log': 1.5.1
+
+  '@hw-agconnect/log@1.5.1':
+    dependencies:
+      '@hw-agconnect/api': 1.5.1
+      '@hw-agconnect/api-types': 1.5.1
+      '@hw-agconnect/instance-types': 1.5.1
+
+  '@hw-agconnect/network-types@1.5.1': {}
+
+  '@hw-agconnect/network@1.5.1':
+    dependencies:
+      '@hw-agconnect/api': 1.5.1
+      '@hw-agconnect/api-types': 1.5.1
+      '@hw-agconnect/instance': 1.5.1
+      '@hw-agconnect/instance-types': 1.5.1
+      '@hw-agconnect/log': 1.5.1
+      '@hw-agconnect/network-types': 1.5.1
+      axios: 0.27.2
+      ua-parser-js: 1.0.34
+    transitivePeerDependencies:
+      - debug
+
+  '@hw-agconnect/remoteconfig-types@1.5.1': {}
+
+  '@hw-agconnect/remoteconfig@1.5.1':
+    dependencies:
+      '@hw-agconnect/abtest': 1.5.1
+      '@hw-agconnect/abtest-types': 1.5.1
+      '@hw-agconnect/api': 1.5.1
+      '@hw-agconnect/api-types': 1.5.1
+      '@hw-agconnect/baseservice': 1.5.1
+      '@hw-agconnect/baseservice-types': 1.5.1
+      '@hw-agconnect/core': 1.5.1
+      '@hw-agconnect/instance': 1.5.1
+      '@hw-agconnect/instance-types': 1.5.1
+      '@hw-agconnect/log': 1.5.1
+      '@hw-agconnect/network': 1.5.1
+      '@hw-agconnect/network-types': 1.5.1
+      '@hw-agconnect/remoteconfig-types': 1.5.1
+      '@hw-agconnect/storage': 1.5.1
+      '@hw-agconnect/storage-types': 1.5.1
+      '@hw-agconnect/util': 1.5.1
+      json-bigint: 1.0.0
+    transitivePeerDependencies:
+      - debug
+
+  '@hw-agconnect/storage-types@1.5.1': {}
+
+  '@hw-agconnect/storage@1.5.1':
+    dependencies:
+      '@hw-agconnect/api': 1.5.1
+      '@hw-agconnect/api-types': 1.5.1
+      '@hw-agconnect/core': 1.5.1
+      '@hw-agconnect/instance': 1.5.1
+      '@hw-agconnect/instance-types': 1.5.1
+      '@hw-agconnect/log': 1.5.1
+      '@hw-agconnect/storage-types': 1.5.1
+
+  '@hw-agconnect/util@1.5.1':
+    dependencies:
+      '@hw-agconnect/api': 1.5.1
+      '@hw-agconnect/api-types': 1.5.1
+      '@hw-agconnect/core': 1.5.1
+      '@hw-agconnect/instance': 1.5.1
+      '@hw-agconnect/instance-types': 1.5.1
+      '@hw-agconnect/log': 1.5.1
+      '@hw-agconnect/storage': 1.5.1
+      '@hw-agconnect/storage-types': 1.5.1
 
   '@iconify-json/simple-icons@1.2.21':
     dependencies:
@@ -1644,6 +1836,13 @@ snapshots:
 
   asynckit@0.4.0: {}
 
+  axios@0.27.2:
+    dependencies:
+      follow-redirects: 1.15.9
+      form-data: 4.0.1
+    transitivePeerDependencies:
+      - debug
+
   axios@1.7.9:
     dependencies:
       follow-redirects: 1.15.9
@@ -1651,6 +1850,8 @@ snapshots:
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
+
+  bignumber.js@9.1.2: {}
 
   birpc@0.2.19: {}
 
@@ -1807,6 +2008,10 @@ snapshots:
   is-what@4.1.16: {}
 
   js-md5@0.7.3: {}
+
+  json-bigint@1.0.0:
+    dependencies:
+      bignumber.js: 9.1.2
 
   lodash-es@4.17.21: {}
 
@@ -1994,6 +2199,8 @@ snapshots:
 
   typescript@5.7.3:
     optional: true
+
+  ua-parser-js@1.0.34: {}
 
   undici-types@6.20.0:
     optional: true
