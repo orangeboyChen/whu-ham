@@ -1,4 +1,4 @@
-<p align="center"><img src="./docs/.vuepress/public/icon-1024 2.png" width="18%" alt="Ham的Logo"/></p>
+<p align="center"><img src="./docs/src/public/icon-1024 2.png" width="18%" alt="Ham的Logo"/></p>
 
 <div align="center">
 <h1>Ham</h1>
