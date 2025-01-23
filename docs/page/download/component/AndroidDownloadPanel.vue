@@ -3,6 +3,7 @@ import {onMounted, ref} from 'vue';
 import {AndroidVersionInfo, getLatestAndroidVersionInfo} from "../service/android_version_fetch";
 import ArrowLink from "../../../components/ArrowLink.vue";
 import AndroidReleaseItem from "./AndroidReleaseItem.vue";
+import ElLoading from "element-plus";
 
 enum LoadState {
   UNLOAD,
@@ -21,7 +22,7 @@ onMounted(async () => {
   }
   loadState.value = LoadState.LOADING;
   try {
-    releaseList.value = await getLatestAndroidVersionInfo(loadState.value);
+    releaseList.value = await getLatestAndroidVersionInfo();
     loadState.value = LoadState.FINISH;
   } catch (e) {
     loadState.value = LoadState.FAIL;
@@ -32,20 +33,18 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div v-if="loadState == LoadState.FINISH">
+  <div v-if="loadState === LoadState.FINISH">
     <div v-for="releaseItem in releaseList" :key="releaseItem.name">
-      <AndroidReleaseItem :item="releaseItem" />
+      <AndroidReleaseItem :item="releaseItem" class="release-item" />
     </div>
-    <span>finish</span>
   </div>
-  <div v-else-if="loadState == LoadState.FAIL">
+  <div v-else-if="loadState === LoadState.FAIL">
     <div class="danger custom-block">
       <p class="custom-block-title">请求失败</p>
       <p>{{error?.message}}</p>
     </div>
     <ArrowLink href="https://github.com/orangeboyChen/whu-ham/releases/latest" text="前往Github Release"/>
   </div>
-
 </template>
 
 <style scoped lang="scss">
@@ -53,5 +52,9 @@ onMounted(async () => {
   padding: 8px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.release-item {
+  margin-bottom: 56px;
 }
 </style>

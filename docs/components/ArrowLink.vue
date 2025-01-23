@@ -36,6 +36,7 @@ const onLinkClick = () => {
 
 .icon {
   display: inline-block;
+  margin-bottom: -2px;
 }
 
 </style>

@@ -30,7 +30,7 @@ const getLatestAndroidVersionInfo = async () => {
   for (let versionInfo of androidVersionInfoList) {
     if (versionInfo.prerelease) {
       resultList.push(versionInfo);
-    } else if (resultList.length === 0) {
+    } else {
       resultList.unshift(versionInfo);
       break;
     }
@@ -50,7 +50,7 @@ const mapGithubResponseToAndroidVersionInfo = (response: GithubReleaseApiRespons
     prerelease: response.prerelease,
     name: response.tag_name,
     versionLog: response.body,
-    createTime: new Date(response.created_at),
+    createTime: new Date(response.published_at),
     apkList: assetList
   };
 }

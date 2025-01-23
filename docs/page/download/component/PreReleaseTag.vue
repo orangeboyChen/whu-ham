@@ -4,7 +4,7 @@
 
 <template>
  <span data-view-component="true"
-       class="Label Label--warning Label--large v-align-text-bottom d-none d-md-inline-block">Pre-release</span>
+       class="Label Label--warning Label--large">Pre-release</span>
 </template>
 
 <style scoped lang="scss">
@@ -21,6 +21,7 @@
   &--large {
     line-height: 22px;
     padding: 0 0.5rem;
+    padding-top: 0.1rem;
   }
 
   &--attention, &--warning {
