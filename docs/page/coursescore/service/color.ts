@@ -3,10 +3,19 @@
  * @version 1.0
  * @date 2025/1/23 18:55
  */
+import {getAgconnect, getCurrentAgconnect} from '../../../config/agconnect';
 import {RangeColor, RangeColorData} from "./type";
 
+const initRemoteConfig = async () => {
+  const agconnect = await getAgconnect();
+  await agconnect.remoteConfig().initialized();
+  await agconnect.remoteConfig().fetch();
+  await agconnect.remoteConfig().apply();
+}
+
 export const getColorConfig = async (): Promise<any> => {
-  const jsonStr = `{"range":[{"from":0,"to":59,"color":"#FF5722"},{"from":60,"to":71,"color":"#FF9800"},{"from":72,"to":77,"color":"#FFC107"},{"from":78,"to":84,"color":"#FFEB3B"},{"from":85,"to":89,"color":"#8BC34A"},{"from":90,"to":100,"color":"#4CAF50"}]}`;
+  await initRemoteConfig();
+  const jsonStr = getCurrentAgconnect().remoteConfig().getValueAsString('courseScoreRequestRange');
   const json = JSON.parse(jsonStr) as RangeColorData;
   const map = {};
   json.range.forEach((range: RangeColor) => {

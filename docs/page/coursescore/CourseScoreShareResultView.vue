@@ -1,13 +1,13 @@
 <script setup lang="ts">
 
+import {getColorConfig} from './service/color';
 import md5 from 'js-md5';
 import {onMounted, ref} from 'vue';
 import {useRouter} from 'vitepress';
-import {getColorConfig} from "./service/color";
 
+const colorConfig = ref<any>({})
 const router = useRouter();
 const statData = ref<CourseGradeStatData>();
-const colorConfig = ref<any>();
 
 interface CourseGradeStatData {
   courseInfo: {
@@ -79,12 +79,12 @@ onMounted(async () => {
         <div class="course-score-item-tip">{{ info.from }}-{{ info.to }}</div>
         <div :style="{
           width: info.total / statData.scoreInfo.total * 80 + '%',
-          background: colorConfig[`${info.from}-${info.to}`]
+          background: colorConfig[`${info.from}-${info.to}`] ?? '',
         }"
              class="course-score-item-division"
              v-if="info.total > 0"/>
         <span :style="{
-          color: colorConfig[`${info.from}-${info.to}`]
+          color: colorConfig[`${info.from}-${info.to}`] ?? '',
         }">{{ info.total }}</span>
       </div>
     </div>

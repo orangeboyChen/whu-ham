@@ -1,16 +1,21 @@
 {
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "@hw-agconnect/api": "1.5.1",
+    "@hw-agconnect/api-types": "1.5.1",
+    "@hw-agconnect/instance": "^1.5.1",
+    "@hw-agconnect/instance-types": "1.5.1",
+    "@hw-agconnect/remoteconfig": "1.5.1",
+    "@hw-agconnect/remoteconfig-types": "^1.5.1",
     "@types/js-md5": "^0.7.2",
     "axios": "^1.7.9",
-    "core\n": "link:@hw-agconnect/core\n",
     "element-plus": "^2.9.3",
-    "instance-types": "link:/@hw-agconnect/instance-types",
     "js-md5": "^0.7.3",
     "lottie-web": "^5.9.6",
     "moment": "^2.30.1",
     "vue": "^3.5.13"
   },
+  "type": "module",
   "name": "Ham-doc",
   "version": "1.0.0",
   "main": "vuepress dev docs",
