@@ -65,5 +65,6 @@
 
 暂时/已经开源的子项目：
 1. [成绩计算](https://github.com/whu-ham/ScoreCalculator)(成绩 -> 设置 -> 选择计算方式里的数据来源)
+2. [ham-rn](https://github.com/orangeboyChen/ham-rn)(APP里用到的ReactNative组件大仓)
 
 目前有计划模块化/重构APP里的部分功能，并开源这些模块（如果时间充足），期待下吧:->
