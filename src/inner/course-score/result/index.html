@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+        (function () {
+            var oldPrefix = "/whu-ham";
+            var newBase = "https://whu-ham.github.io";
+
+            var path = window.location.pathname;
+
+            // 去掉 /whu-ham 前缀
+            if (path.startsWith(oldPrefix)) {
+                path = path.substring(oldPrefix.length);
+            }
+
+            // 确保至少是 /
+            if (!path.startsWith("/")) {
+                path = "/" + path;
+            }
+
+            var newUrl =
+                newBase +
+                path +
+                window.location.search +
+                window.location.hash;
+
+            window.location.replace(newUrl);
+        })();
+    </script>
+</head>
+<body>
+<p>Redirecting...</p>
+</body>
+</html>
